@@ -16,15 +16,24 @@ Below 50: Fail'''
 #     print("Fail")
 
 '''Find the greatest among three numbers.'''
-num1 = int(input("Enter first number:"))
-num2 = int(input("Enter second number:"))
-num3 = int(input("Enter third number:"))
+# num1 = int(input("Enter first number:"))
+# num2 = int(input("Enter second number:"))
+# num3 = int(input("Enter third number:"))
 
-if(num1>num2 and num1>num3):
-    print("First number is greater")
-elif(num2>num1 and num2>num3):
-    print("Second number is greater")
-elif(num3>num1 and num3>num2):
-    print("Third number is greater")
+# if(num1>num2 and num1>num3):
+#     print("First number is greater")
+# elif(num2>num1 and num2>num3):
+#     print("Second number is greater")
+# elif(num3>num1 and num3>num2):
+#     print("Third number is greater")
+# else:
+#     print("All numbers are equal")
+
+'''Check whether a year is a leap year.'''
+year  = int(input("Enter year: "))
+
+# Check logic for a leap year
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(f"{year} is a leap year.")
 else:
-    print("All numbers are equal")
+    print(f"{year} is not a leap year.")
