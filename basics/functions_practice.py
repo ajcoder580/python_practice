@@ -123,7 +123,16 @@ def is_palindrome(s):
 
 def min_max(numbers):
     """Return (smallest, largest) of a list. Do not use min()/max()."""
-    pass
+    smallest=0
+    largest=0
+    for num in numbers:
+        if(num>largest):
+            largest=num
+        elif(smallest[0]>num):
+            smallest=num
+
+    return largest,smallest
+       
 
 
 def average(*nums):
