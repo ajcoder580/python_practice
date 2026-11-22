@@ -53,3 +53,24 @@ def sum_dgt(n):
    return sum
 
 print(sum_dgt(456))
+
+'''Write a program to print all numbers from 1 to 100 that are divisible by both 3 
+and 5.'''
+print("********Num divisible by 3 and 5 both are:")
+for i in range(1,100):
+   if(i%3==0 and i%5==0):
+      print(i)
+
+'''Design a program to continuously input a number  from user & print if it is 
+positive or negative until the user enters “Quit”.'''
+
+num=''
+while(num !="quit"):
+   num=input("Enter number to print:\n")
+   if num=='quit':
+      break
+   num=int(num)
+   print("You enter:", num)
+
+
+
